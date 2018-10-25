@@ -19,6 +19,18 @@ namespace Lab12Form
         {
             InitializeComponent();
         }
+        public void AgregarComida(Comida comida)
+        {
+            listBox1.Items.Add(comida);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (CAgregarComida != null)
+            {
+                CAgregarComida.Invoke(textBox1.Text, int.Parse(textBox2.Text), int.Parse(textBox3.Text),int.Parse(textBox4.Text));
+            }
+        }
     }
     
 }

@@ -153,6 +153,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox2
             // 
@@ -169,9 +170,9 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(44, 80);
+            this.listBox1.Location = new System.Drawing.Point(39, 93);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(445, 134);
+            this.listBox1.Size = new System.Drawing.Size(486, 121);
             this.listBox1.TabIndex = 0;
             // 
             // label5
