@@ -9,6 +9,10 @@ namespace MVC
     public class ListaComida
     {
         List <Comida> comidas;
+        public ListaComida()
+        {
+            comidas = new List<Comida>();
+        }
         public void Agregar(Comida comida)
         {
             comidas.Add(comida);

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Comida.cs" />
     <Compile Include="ListaComida.cs" />
+    <Compile Include="main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
