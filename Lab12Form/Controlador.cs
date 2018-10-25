@@ -20,8 +20,7 @@ namespace Lab12Form
             Comida comida = new Comida( nombre, carbohidratos,proteinas,grasas);
             comidas.Agregar(comida);
             form1.AgregarComida(comida);
-
-
         }
+
     }
 }
