@@ -31,6 +31,12 @@ namespace Lab12Form
                 CAgregarComida.Invoke(textBox1.Text, int.Parse(textBox2.Text), int.Parse(textBox3.Text),int.Parse(textBox4.Text));
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            foreach (int index in listBox1.SelectedIndices.Cast<int>().Select(x => x).Reverse())
+                listBox1.Items.RemoveAt(index);
+        }
     }
     
 }
