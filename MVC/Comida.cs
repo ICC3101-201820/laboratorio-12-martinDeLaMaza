@@ -8,17 +8,21 @@ namespace MVC
 {
     public class Comida
     {
-        string nombre;
-        int carbohidratos, proteinas, grasas;        public Comida(string nombre, int carbohidratos, int proteinas, int grasas)
+        public string nombre;
+        public int carbohidratos, proteinas, grasas;        public Comida(string nombre, int carbohidratos, int proteinas, int grasas)
         {
             this.nombre = nombre;
             this.carbohidratos = carbohidratos;
             this.proteinas = proteinas;
             this.grasas = grasas;
-        }        public void Calorias()
+        }        public int Calorias()
         {
             //(4 ∗ carbohidratos + 4 ∗proteinas + 9 ∗ grasas
             int x = 4 * carbohidratos + 4 * proteinas + 9 * grasas;
+            return x;
+        }        public string DatosComida(Comida c)
+        {
+            return ($"{c.nombre} (carbohidratos: {c.carbohidratos}, proteinas: {c.proteinas}, grasas: {c.grasas}, calorias: {c.Calorias()})");
         }
     }
 }
